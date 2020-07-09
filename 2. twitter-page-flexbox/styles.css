@@ -6,12 +6,13 @@
 
 body {
   background: #e6ecf0;
-  font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
 }
 
-input, button {
+input,
+button {
   outline: 0;
 }
 
@@ -44,7 +45,7 @@ header#main-header nav ul {
 header#main-header nav ul li {
   display: flex;
   align-items: center;
-    
+
   font-size: 13px;
   color: #667580;
   font-weight: bold;
@@ -91,7 +92,7 @@ header#main-header div.side button {
   justify-content: center;
 
   width: 90px;
-  font-weight: 14px;
+  font-weight: bold;
   font-size: 14px;
   color: #fff;
   border: 0;
@@ -114,7 +115,7 @@ div.bar {
   height: 59px;
   background: #fff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-}  
+}
 
 div.bar .content {
   display: flex;
@@ -165,13 +166,14 @@ div.bar .content ul li strong {
 div.bar .content ul li.active strong {
   color: #3bb9e3;
 }
+
 div.bar .content .actions {
   display: flex;
 }
 
 div.bar .content .actions button {
   height: 34px;
-  
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -183,16 +185,16 @@ div.bar .content .actions button {
   border: 1px solid #3bb9e3;
   border-radius: 16px;
 
-  background: #fff;
-
   margin-right: 20px;
+
+  background: #fff;
 }
 
 div.wrapper-content {
   display: flex;
 }
 
-div.wrapper-content aside.profile{
+div.wrapper-content aside.profile {
   width: 260px;
 }
 
@@ -229,7 +231,7 @@ div.wrapper-content aside.profile ul {
 div.wrapper-content aside.profile ul.list li {
   font-size: 14px;
   color: #657786;
-  
+
   display: flex;
   align-items: center;
   margin-top: 5px;
@@ -258,13 +260,11 @@ div.wrapper-content aside.profile .widget strong {
 div.wrapper-content aside.profile .widget strong img {
   margin-right: 5px;
 }
-    
+
 div.wrapper-content aside.profile .followers ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  align-content: flex-start;
-  align-items: flex-start;
 }
 
 div.wrapper-content aside.profile .followers ul li {
@@ -280,8 +280,6 @@ div.wrapper-content aside.profile .images ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  align-content: flex-start;
-  align-items: flex-start;
 }
 
 div.wrapper-content aside.profile .images ul li {
@@ -289,13 +287,12 @@ div.wrapper-content aside.profile .images ul li {
   height: 80px;
   background: #d0d5d9;
   border-radius: 8px;
-  flex-grow: 1; /* flex: 1 0 auto; */
-  flex-shrink: 0;
+  flex: 1 0 auto;
   margin: 0 5px 5px 0;
 }
 
 div.wrapper-content .timeline {
-  flex-grow: 1;
+  flex: 1;
   background: #fff;
   margin: 10px 20px 0;
 }
@@ -345,7 +342,7 @@ div.wrapper-content .timeline ul.tweets li .info {
 
 div.wrapper-content .timeline ul.tweets li .info strong {
   font-size: 14px;
-  color: #1f2226;
+  color: #1f2326;
 }
 
 div.wrapper-content .timeline ul.tweets li .info strong span {
@@ -356,8 +353,8 @@ div.wrapper-content .timeline ul.tweets li .info strong span {
 
 div.wrapper-content .timeline ul.tweets li .info p {
   font-size: 14px;
-  color: #1f2226;
-  margin-top: 10px;
+  color: #1f2326;
+  margin-top: 5px;
 }
 
 div.wrapper-content .timeline ul.tweets li .actions {
@@ -379,6 +376,10 @@ div.wrapper-content .timeline ul.tweets li .actions a:first-child {
   margin-left: 0;
 }
 
+div.wrapper-content .timeline ul.tweets li .actions a img {
+  margin-right: 5px;
+}
+
 div.wrapper-content aside.widgets {
   width: 290px;
   margin-top: 10px;
@@ -395,7 +396,7 @@ div.wrapper-content aside.widgets .widget .title {
 }
 
 div.wrapper-content aside.widgets .widget .title strong {
-  font-size: 18ps;
+  font-size: 18px;
   color: #1f2226;
 }
 
@@ -432,11 +433,10 @@ div.wrapper-content aside.widgets .follow ul li {
 }
 
 div.wrapper-content aside.widgets .follow ul li:last-child {
-  margin-bottom: 0px;
+  margin-bottom: 0;
   padding-bottom: 0;
   border: 0;
 }
-
 
 div.wrapper-content aside.widgets .follow ul li .profile {
   display: flex;
@@ -457,7 +457,7 @@ div.wrapper-content aside.widgets .follow ul li .profile .info {
 
 div.wrapper-content aside.widgets .follow ul li .profile .info strong {
   font-size: 14px;
-  color: #1f2226;
+  color: #1f2326;
 }
 
 div.wrapper-content aside.widgets .follow ul li .profile .info strong span {
@@ -468,6 +468,7 @@ div.wrapper-content aside.widgets .follow ul li .profile .info strong span {
 div.wrapper-content aside.widgets .follow ul li .profile .info button {
   height: 27px;
   margin-top: 4px;
+
   display: flex;
   align-items: center;
   justify-content: center;
